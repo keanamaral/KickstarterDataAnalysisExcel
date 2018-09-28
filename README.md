@@ -16,31 +16,31 @@ We are given a little over 4000 records to analyze.
 
 ## Dataset
 
-![Kickstarter Table](imagesforReadme/01RawData.PNG)
+![Kickstarter Table](imagesforReadme/01RawData.png)
 
 Dataset includes project name, description, funding goal in US$, money pledged in US$, `state` which is either `successful` or `failed` or `canceled`, country, currency, deadline date (timestamp), launched date (timestamp), category and sub category.
 
 ## Added Fields to Dataset
 
-![Added Fields](imagesforReadme/02DataColumnsAdded.PNG)
+![Added Fields](imagesforReadme/02DataColumnsAdded.png)
 
 In order to do our analysis we added 6 fields: % Funded,	Avg Duration,	Category,	Sub-Category,	Date Created,	and Date Ended
 
 We used formulas to calculate the values in these fields
 
-![Calculated Fields](imagesforReadme/03DataColumnsAddedFormulas.PNG)
+![Calculated Fields](imagesforReadme/03DataColumnsAddedFormulas.png)
 
 Created a new sheet with a pivot table to analyze initial worksheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **category**.
 
-![Pivot Table 1](imagesforReadme/04Pivot01.PNG)
+![Pivot Table 1](imagesforReadme/04Pivot01.png)
 
 In the same worksheet we also created a stacked column pivot chart that can be filtered by `country` and `parent-category` based on the dataset.
 
-![Pivot Table 2](imagesforReadme/05Pivot02.PNG)
+![Pivot Table 2](imagesforReadme/05Pivot02.png)
 
 Created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.  And charted the results of the pivot table in a pivot chart to see trend by month
 
-![Pivot Table 3](imagesforReadme/06Pivot03.PNG)
+![Pivot Table 3](imagesforReadme/06Pivot03.png)
 
 Created a new worksheet to run an analysis using a table with 8 columns: `Goal`, `Number Successful`, `Number Failed`, `Number Canceled`, `Total Projects`, `Percentage Successful`, `Percentage Failed`, and `Percentage Canceled`.
 
@@ -48,20 +48,20 @@ We used this table to count how many successful, failed, and canceled projects w
 
 Created a line chart which graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
 
-![Analsis Table](imagesforReadme/07Analysis.PNG)
+![Analsis Table](imagesforReadme/07Analysis.png)
 
 Ran 2 regression analysis to see if a statistically strong relationship existed to explain relationship between input variables
 
 ### Regression Analysis 1: If the Goal $s are higher or lower does it necessarily mean that the Pledged $s will have a relationship higher or lower?
 
-![Regression 1](imagesforReadme/08Regression01.PNG)
+![Regression 1](imagesforReadme/08Regression01.png)
 
 ### Regression Analysis 2: If there are more backers will it result in more Pledged $s?
 
-![Regression 2](imagesforReadme/09Regression02.PNG)
+![Regression 2](imagesforReadme/09Regression02.png)
 
 Finally we summarize the results of our analysis in a word document.
 
-![Results](imagesforReadme/10Results.PNG)
+![Results](imagesforReadme/10Results.png)
 
 
